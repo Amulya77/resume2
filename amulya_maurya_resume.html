@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amulya Maurya — Resume</title>
+  <style>
+    /* Print-friendly, single-column resume inspired by the supplied reference */
+    :root {
+      --ink: #171717;
+      --muted: #505050;
+      --rule: #252525;
+      --paper: #ffffff;
+      --page-width: 8.27in;
+      --page-height: 11.69in;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: #e9e9e9;
+      color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 10pt;
+      line-height: 1.35;
+    }
+
+    .page {
+      width: var(--page-width);
+      min-height: var(--page-height);
+      margin: 24px auto;
+      padding: 0.48in 0.62in 0.5in;
+      background: var(--paper);
+      box-shadow: 0 2px 16px rgba(0,0,0,.12);
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 17px;
+    }
+
+    h1 {
+      margin: 0 0 3px;
+      font-size: 23pt;
+      letter-spacing: 1.1px;
+      line-height: 1.1;
+      font-weight: 800;
+      /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+       color: #0d4563;
+      
+    }
+
+    .headline {
+      font-size: 10.5pt;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .contact {
+      color: var(--muted);
+      font-size: 9pt;
+      line-height: 1.55;
+      overflow-wrap: anywhere;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    .section { margin-top: 13px; }
+
+    h2 {
+      font-size: 11pt;
+      letter-spacing: .65px;
+      text-transform: uppercase;
+      margin: 0 0 6px;
+      padding-bottom: 3px;
+      border-bottom: 1.2px solid var(--rule);
+      font-weight: 800;
+      color: #0d4563;
+    }
+
+    p { margin: 0 0 5px; }
+
+    .role-row, .edu-row, .project-row {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .role, .degree, .project-title { font-weight: 700; }
+
+    .date {
+      flex-shrink: 0;
+      color: var(--muted);
+      font-size: 9pt;
+      text-align: right;
+    }
+
+    .org {
+      color: var(--muted);
+      margin: 1px 0 5px;
+    }
+
+    ul {
+      margin: 4px 0 7px;
+      padding-left: 17px;
+    }
+
+    li { margin: 0 0 3px; padding-left: 1px; }
+
+    .skills p { margin-bottom: 4px; }
+    .skills strong { font-weight: 700; }
+
+    .project-stack {
+      color: var(--muted);
+      font-size: 9pt;
+      margin: 1px 0 4px;
+    }
+
+    .note {
+      font-size: 8.5pt;
+      color: var(--muted);
+      font-style: italic;
+      margin-bottom: 5px;
+    }
+
+    @media screen and (max-width: 700px) {
+      body { background: #fff; }
+      .page {
+        width: 100%;
+        min-height: 0;
+        margin: 0;
+        padding: 28px 22px;
+        box-shadow: none;
+      }
+      .role-row, .edu-row, .project-row {
+        display: block;
+      }
+      .date { text-align: left; margin-top: 1px; }
+      h1 { font-size: 21pt; }
+    }
+
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
+    @media print {
+      body { background: #fff; font-size: 9.5pt; }
+      .page {
+        width: 210mm;
+        min-height: 297mm;
+        margin: 0;
+        padding: 12mm 15mm 12mm;
+        box-shadow: none;
+      }
+      a { text-decoration: none; }
+      .section { break-inside: avoid; }
+    }
+    @page {
+  size: A4;
+  margin: 12mm 15mm;
+}
+
+@media print {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    font-size: 9.5pt;
+  }
+
+  .page {
+    width: auto;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  .section {
+    break-inside: auto;
+  }
+
+  h2 {
+    break-after: avoid;
+  }
+
+  li {
+    break-inside: avoid;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <h1>AMULYA MAURYA</h1>
+      <div class="headline">C++ Software Engineer | Trading Systems | Multithreading &amp; Distributed Systems</div>
+      <div class="contact">
+        Mumbai, Maharashtra, India &nbsp;|&nbsp;
+        <a href="mailto:mauryaamulya@gmail.com">mauryaamulya@gmail.com</a><br />
+        <a href="https://www.linkedin.com/in/amulya-maurya/">linkedin.com/in/amulya-maurya</a>
+        &nbsp;|&nbsp;
+        <a href="https://github.com/Amulya77">github.com/Amulya77</a>
+      </div>
+    </header>
+
+    <section class="section">
+      <h2>Professional Summary</h2>
+      <p>C++ Software Engineer with 1.5+ years of experience at Tata Consultancy Services, working on production support and legacy C++ development for capital-markets infrastructure associated with the Bombay Stock Exchange. Experienced in C++ applications, multithreading, Unix environments, and MySQL in mission-critical systems. Interested in low-latency trading systems, performance-oriented software engineering, distributed systems, and robust production architecture. Engineering background specializing in Artificial Intelligence and Machine Learning.</p>
+    </section>
+
+    <section class="section">
+      <h2>Education</h2>
+      <div class="edu-row">
+        <div class="degree">Bachelor of Engineering in Computer Science Engineering (AI &amp; ML)</div>
+        <div class="date">Jul 2020 – Apr 2024</div>
+      </div>
+      <div class="org">Chandigarh University | Mohali, Punjab, India</div>
+      <p>CGPA: 8.28/10 | Specialization: Artificial Intelligence and Machine Learning</p>
+
+      <div class="edu-row" style="margin-top:7px">
+        <div class="degree">Intermediate (Class XII)</div>
+        <div class="date">Apr 2017 – Mar 2019</div>
+      </div>
+      <div class="org">Kendriya Vidyalaya Lalitpur | Uttar Pradesh, India</div>
+      <p>Percentage: 91.20%</p>
+    </section>
+
+    <section class="section">
+      <h2>Work Experience</h2>
+      <div class="role-row">
+        <div class="role">Systems Engineer</div>
+        <div class="date">May 2025 – Present</div>
+      </div>
+      <div class="org">Tata Consultancy Services (TCS) | Mumbai, Maharashtra, India</div>
+      <ul>
+        <li>Develop and maintain legacy C++ code, implementing application changes and supporting existing system functionality.</li>
+        <li>Work on the Broadcast module, including MDD (Market Data Dissemination), MOBO, and NFCAST components, supporting market-data and broadcast functionality.</li>
+        <li>Work with the SEBI-related environment, including Trade DWH workflows and SEBI file generation, within the BSE trading ecosystem.</li>
+        <li>Tested CAS(Closing Auction Session) related changes which are currently live in Market</li>
+        <li>Support production environments for mission-critical capital-markets applications associated with the Bombay Stock Exchange, helping maintain application stability and operational continuity.</li>
+        <li>Investigate production issues, debug application behavior, and contribute to root-cause analysis.</li>
+        <li>Use Unix environments to inspect logs, investigate application behavior, and support production troubleshooting.</li>
+        <li>Work with MySQL for database-related investigation and application support where required by system workflows.</li>
+        <li>Analyze existing code paths and dependencies to understand system behavior and implement changes while minimizing regression risk.</li>
+      </ul>
+      
+    </section>
+
+    <section class="section">
+      <h2>Projects</h2>
+      <div class="project-row">
+        <div class="project-title">Trading System : A Stock Exchange Replica</div>
+        <div class="date">Personal Project</div>
+      </div>
+      <div class="project-stack">C++ | Object-Oriented Design | Data Structures &amp; Algorithms | System Design</div>
+      <!-- <div class="note">In development — describe only components and features you have actually designed or implemented.</div> -->
+      <ul>
+        <li>Designing a modular stock-exchange simulation architecture inspired by real-world trading infrastructure.</li>
+        <li>Defining core components including a Gateway, Matching Engine, Broadcast Layer, and persistence services.</li>
+        <li>Exploring partition-based order routing and matching to model order processing across isolated execution components.</li>
+        <li>Designing matching-engine logic around in-memory order processing, deterministic execution, and low-latency considerations.</li>
+        <li>Modeling event-driven communication for trade events, order-book updates, market-data dissemination, and persistence.</li>
+        <li>Exploring primary/disaster recovery concepts and beginning-of-day/end-of-day processing workflows.</li>
+      </ul>
+      <p><strong>C++ &amp; Core CS:</strong> Object-Oriented Programming, Classes and Objects, STL, Pointers, References, Memory Management, Multithreading, Version Control, Data Structures &amp; Algorithms</p>
+      
+    </section>
+      
+      
+      <hr>
+
+        <div class="project-row">
+          <div class="project-title">URL Shortener Service</div>
+          <div class="date">Personal Project</div>
+        </div>
+
+        <div class="project-stack">C++ | MySQL | REST APIs | Multithreading | System Design</div>
+        <!-- <div class="note">In development — describe only components and features you have actually designed or implemented.</div> -->
+
+        <ul>
+          <li>Designing a URL shortening service that generates unique short codes and maps them to original URLs.</li>
+          <li>Implementing URL creation, redirection, and lookup functionality with persistent storage using MySQL.</li>
+          <li>Exploring thread-safe request handling and concurrent access to URL mappings using C++ multithreading.</li>
+          <li>Designing database schemas and indexes to support efficient URL lookups and retrieval.</li>
+          <li>Exploring caching strategies to reduce database access and improve redirection latency.</li>
+          <li>Applying system design concepts including API design, short-code generation, collision handling, and scalability.</li>
+        </ul>
+      </section>
+
+
+    <section class="section skills">
+      <h2>Technical Skills</h2>
+      <p><strong>Programming:</strong> C++, SQL</p>
+      <p><strong>C++ &amp; Core CS:</strong> Object-Oriented Programming, STL, Pointers, References, Memory Management, Multithreading, Data Structures &amp; Algorithms</p>
+      <p><strong>Systems:</strong> Unix/Linux, Production Troubleshooting, Debugging, Legacy Code Maintenance</p>
+      <p><strong>Databases:</strong> MySQL, SQL</p>
+      <p><strong>Software Engineering:</strong> SOLID Principles, DRY, KISS, YAGNI, Low-Level Design, Design Patterns</p>
+      <p><strong>System Design:</strong> Distributed Systems Fundamentals, Trading-System Architecture, Order Processing, Event-Driven Architecture, Partitioning, Fault Tolerance</p>
+      <p><strong>Academic Specialization:</strong> Artificial Intelligence and Machine Learning</p>
+    </section>
+
+    <!-- <section class="section">
+      <h2>Achievements</h2>
+      <p>[Add relevant professional recognition, technical certifications, academic achievements, or measurable contributions, if applicable.]</p>
+    </section> -->
+  </main>
+</body>
+</html>
